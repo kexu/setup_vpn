@@ -4,4 +4,6 @@ mkdir v2ray-linux-64
 mv v2ray-linux-64.zip ./v2ray-linux-64
 cd v2ray-linux-64
 unzip v2ray-linux-64.zip
+cp ./systemd/system/v2ray.service /usr/lib/systemd/system
+cp v2ray v2ctl geoip.dat geosite.dat /usr/local/bin 
 
