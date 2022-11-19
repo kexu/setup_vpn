@@ -6,4 +6,7 @@ cd v2ray-linux-64
 unzip v2ray-linux-64.zip
 cp ./systemd/system/v2ray.service /usr/lib/systemd/system
 cp v2ray v2ctl geoip.dat geosite.dat /usr/local/bin 
+mkdir /usr/local/etc/v2ray
+mv vpoint_vmess_freedom.json /usr/local/etc/v2ray/config.json
+vi /usr/local/etc/v2ray/config.json
 
