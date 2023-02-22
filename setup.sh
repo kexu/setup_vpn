@@ -8,5 +8,9 @@ cp ./systemd/system/v2ray.service /usr/lib/systemd/system
 cp v2ray v2ctl geoip.dat geosite.dat /usr/local/bin 
 mkdir /usr/local/etc/v2ray
 mv vpoint_vmess_freedom.json /usr/local/etc/v2ray/config.json
-vi /usr/local/etc/v2ray/config.json
+# vi /usr/local/etc/v2ray/config.json
+sed -i 's/10086/16616/g' /usr/local/etc/v2ray/config.json
+sed -i 's/e3e35cd38666/e3e35cd38666/g' /usr/local/etc/v2ray/config.json
+systemctl start v2ray
+
 
